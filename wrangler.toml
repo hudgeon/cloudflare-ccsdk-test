@@ -1,0 +1,20 @@
+name = "cloudflare-ccsdk-test"
+main = "src/index.ts"
+compatibility_date = "2024-11-12"
+compatibility_flags = ["nodejs_compat"]
+
+[[containers]]
+class_name = "ClaudeCodeSDK"
+image = "./Dockerfile"
+
+[[durable_objects.bindings]]
+class_name = "ClaudeCodeSDK"
+name = "CLAUDE_CODE_SDK"
+
+[[migrations]]
+new_sqlite_classes = ["ClaudeCodeSDK"]
+tag = "v1"
+
+[vars]
+CLAUDE_CODE_OAUTH_TOKEN = "[REDACTED_OAUTH_TOKEN]"
+CLAUDE_CODE_SDK_CONTAINER_API_KEY = "[REDACTED_API_KEY]"

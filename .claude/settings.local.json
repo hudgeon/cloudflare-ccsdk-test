@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__context7__get-library-docs",
+      "Bash(cat:*)",
+      "Bash(curl:*)",
+      "Bash(docker stop:*)",
+      "Bash(docker rm:*)",
+      "Bash(docker build:*)",
+      "Bash(./test.sh:*)",
+      "mcp__context7__resolve-library-id",
+      "WebSearch",
+      "Bash(wrangler deploy:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

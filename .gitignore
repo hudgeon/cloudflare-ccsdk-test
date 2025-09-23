@@ -72,12 +72,13 @@ web_modules/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variable files
+# dotenv environment variable files - IMPORTANT: Contains secrets
 .env
 .env.development.local
 .env.test.local
 .env.production.local
 .env.local
+.env.example
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -133,13 +134,18 @@ dist
 .wrangler/
 .dev.vars
 
-# Cloudflare
+# Cloudflare - Keep config files but ignore generated ones
 worker-configuration.d.ts
-wrangler.toml
-wrangler.json
+*.wrangler-state
+.cf/
 
-# Claude SDK / Authentication
-.claude/
+# Cloudflare Container specific
+.containers/
+containers-output/
+
+# Claude SDK / Authentication - Keep .claude/settings.json for Docker
+.claude/credentials.json
+.claude/.credentials.json
 .credentials.json
 .claude.json
 claude.config.json
