@@ -15,6 +15,12 @@ name = "CLAUDE_CODE_SDK"
 new_sqlite_classes = ["ClaudeCodeSDK"]
 tag = "v1"
 
+[observability]
+enabled = true
+
+[observability.logs]
+enabled = true
+
 [vars]
 CLAUDE_CODE_OAUTH_TOKEN = "[REDACTED_OAUTH_TOKEN]"
 CLAUDE_CODE_SDK_CONTAINER_API_KEY = "[REDACTED_API_KEY]"

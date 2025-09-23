@@ -10,7 +10,10 @@
       "Bash(./test.sh:*)",
       "mcp__context7__resolve-library-id",
       "WebSearch",
-      "Bash(wrangler deploy:*)"
+      "Bash(wrangler deploy:*)",
+      "Bash(wrangler deployments:*)",
+      "Bash(wrangler whoami:*)",
+      "Bash(wrangler tail:*)"
     ],
     "deny": [],
     "ask": []
